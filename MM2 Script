@@ -286,7 +286,7 @@ coroutine.wrap(RNIIWR_fake_script)()
 local function WCRNHKB_fake_script() -- TextLabel_4.Script 
 	local script = Instance.new('Script', TextLabel_4)
 
-	 V = "Version: 1.0.2"
+	 V = "Version: 1.0.5"
 	 script.Parent.Text = V
 end
 coroutine.wrap(WCRNHKB_fake_script)()
