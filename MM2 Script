@@ -44,8 +44,8 @@ Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.365750074, 0, 0.211907297, 0)
-Frame.Size = UDim2.new(0, 393, 0, 347)
+Frame.Position = UDim2.new(0.221941844, 0, 0.211907297, 0)
+Frame.Size = UDim2.new(0, 500, 0, 347)
 
 UICorner.CornerRadius = UDim.new(0, 5)
 UICorner.Parent = Frame
@@ -55,7 +55,7 @@ Config_1.Parent = Frame
 Config_1.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
 Config_1.BorderColor3 = Color3.fromRGB(115, 115, 115)
 Config_1.BorderSizePixel = 0
-Config_1.Position = UDim2.new(0.480186254, 0, 0.203384086, 0)
+Config_1.Position = UDim2.new(0.490186274, 0, 0.206265941, 0)
 Config_1.Size = UDim2.new(0, 186, 0, 42)
 Config_1.Font = Enum.Font.SourceSans
 Config_1.PlaceholderColor3 = Color3.fromRGB(222, 222, 222)
@@ -84,7 +84,7 @@ CF3.Parent = Frame
 CF3.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 CF3.BorderColor3 = Color3.fromRGB(220, 75, 65)
 CF3.BorderSizePixel = 0
-CF3.Position = UDim2.new(0.0251133516, 0, 0.546742141, 0)
+CF3.Position = UDim2.new(0.125657842, 0, 0.489105314, 0)
 CF3.Size = UDim2.new(0, 375, 0, 50)
 CF3.Font = Enum.Font.SourceSans
 CF3.Text = "StartFarm"
@@ -101,7 +101,7 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.0215590764, 0, 0.207060009, 0)
+TextLabel.Position = UDim2.new(0.145559087, 0, 0.204178169, 0)
 TextLabel.Size = UDim2.new(0, 135, 0, 40)
 TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "TP Duration"
@@ -115,7 +115,7 @@ TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.695152164, 0, 0.851063848, 0)
+TextLabel_2.Position = UDim2.new(0.769152105, 0, 0.851063848, 0)
 TextLabel_2.Size = UDim2.new(0, 104, 0, 38)
 TextLabel_2.Font = Enum.Font.SourceSans
 TextLabel_2.Text = "Made by: NotZinux"
@@ -144,7 +144,7 @@ TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.BackgroundTransparency = 1.000
 TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_4.BorderSizePixel = 0
-TextLabel_4.Position = UDim2.new(0.351729631, 0, 0.851063848, 0)
+TextLabel_4.Position = UDim2.new(0.372452378, 0, 0.851063848, 0)
 TextLabel_4.Size = UDim2.new(0, 121, 0, 38)
 TextLabel_4.Font = Enum.Font.SourceSans
 TextLabel_4.Text = "nil"
@@ -158,8 +158,8 @@ Confirm.Parent = Frame
 Confirm.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 Confirm.BorderColor3 = Color3.fromRGB(220, 75, 65)
 Confirm.BorderSizePixel = 0
-Confirm.Position = UDim2.new(0.100344129, 0, 0.352275312, 0)
-Confirm.Size = UDim2.new(0, 317, 0, 41)
+Confirm.Position = UDim2.new(0.100344084, 0, 0.352275312, 0)
+Confirm.Size = UDim2.new(0, 401, 0, 41)
 Confirm.Font = Enum.Font.SourceSans
 Confirm.Text = "Confirm"
 Confirm.TextColor3 = Color3.fromRGB(250, 250, 250)
@@ -175,7 +175,7 @@ TextLabel_5.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
 TextLabel_5.BackgroundTransparency = 1.000
 TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_5.BorderSizePixel = 0
-TextLabel_5.Size = UDim2.new(0, 385, 0, 33)
+TextLabel_5.Size = UDim2.new(0, 500, 0, 42)
 TextLabel_5.Font = Enum.Font.Creepster
 TextLabel_5.Text = "2024: MM2 HALLOWEEN SCRIPT"
 TextLabel_5.TextColor3 = Color3.fromRGB(221, 78, 12)
@@ -188,8 +188,8 @@ Anti_AFK.Parent = Frame
 Anti_AFK.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 Anti_AFK.BorderColor3 = Color3.fromRGB(220, 75, 65)
 Anti_AFK.BorderSizePixel = 0
-Anti_AFK.Position = UDim2.new(0.0276579335, 0, 0.705243647, 0)
-Anti_AFK.Size = UDim2.new(0, 375, 0, 50)
+Anti_AFK.Position = UDim2.new(0.125657842, 0, 0.65913415, 0)
+Anti_AFK.Size = UDim2.new(0, 374, 0, 50)
 Anti_AFK.Font = Enum.Font.SourceSans
 Anti_AFK.Text = "Anti-AFK"
 Anti_AFK.TextColor3 = Color3.fromRGB(250, 250, 250)
@@ -202,7 +202,7 @@ UICorner_6.Parent = Anti_AFK
 
 -- Scripts:
 
-local function FTYLFS_fake_script() -- CF3.TeleportToCoinParts 
+local function NIMBRL_fake_script() -- CF3.TeleportToCoinParts 
 	local script = Instance.new('LocalScript', CF3)
 
 	local Players = game:GetService("Players")
@@ -281,15 +281,15 @@ local function FTYLFS_fake_script() -- CF3.TeleportToCoinParts
 	
 	
 end
-coroutine.wrap(FTYLFS_fake_script)()
-local function UJDU_fake_script() -- TextLabel_4.Script 
+coroutine.wrap(NIMBRL_fake_script)()
+local function XGKF_fake_script() -- TextLabel_4.Script 
 	local script = Instance.new('Script', TextLabel_4)
 
-	local V = "Version: 1.0.6"
+	local V = "Version: 1.0.8"
 	 script.Parent.Text = V
 end
-coroutine.wrap(UJDU_fake_script)()
-local function JQIV_fake_script() -- Anti_AFK.AntiAFK 
+coroutine.wrap(XGKF_fake_script)()
+local function NOJLH_fake_script() -- Anti_AFK.AntiAFK 
 	local script = Instance.new('LocalScript', Anti_AFK)
 
 	local Players = game:GetService("Players")
@@ -303,8 +303,8 @@ local function JQIV_fake_script() -- Anti_AFK.AntiAFK
 		end)
 	end)
 end
-coroutine.wrap(JQIV_fake_script)()
-local function PSKQTP_fake_script() -- Frame.Drag 
+coroutine.wrap(NOJLH_fake_script)()
+local function MGMLA_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -347,8 +347,8 @@ local function PSKQTP_fake_script() -- Frame.Drag
 		end
 	end)
 end
-coroutine.wrap(PSKQTP_fake_script)()
-local function HUDKU_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(MGMLA_fake_script)()
+local function XPMP_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	if script.Parent.Enabled == true then
@@ -361,33 +361,13 @@ local function HUDKU_fake_script() -- ScreenGui.LocalScript
 		})
 	end
 end
-coroutine.wrap(HUDKU_fake_script)()
-local function PNLA_fake_script() -- ScreenGui.Script 
+coroutine.wrap(XPMP_fake_script)()
+local function PDKO_fake_script() -- ScreenGui.Script 
 	local script = Instance.new('Script', ScreenGui)
 
-	
-	print([[
-	------------------------------------
-	Script made by Zinux/NotZinux
-	
-	ZYRACHEATS OWNED BY ZINUX NOBODY ELSE!
-	-------------------------------------
-	--]]) 
-	
-	
-	print([[
-	Checking Version...
-	
-	
-	]])
-	task.wait(1)
-	print([[ 1.0.6
-	-------------
-	
-	You got the latest version!
-	]])
+	warn("Warning: theres a possiblity that you might get kicked by the anti-cheat if you input something lower than or between 0.1 to 0.5")
 end
-coroutine.wrap(PNLA_fake_script)()
+coroutine.wrap(PDKO_fake_script)()
 
 
 
