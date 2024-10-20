@@ -12,20 +12,29 @@
                                   |__/                                                                                  \______/                                                                                                                                          
 
 --]]
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local Config_1 = Instance.new("TextBox")
 local UICorner_2 = Instance.new("UICorner")
-local CF3 = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
 local UICorner_3 = Instance.new("UICorner")
+local CF3 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
 local TextLabel_3 = Instance.new("TextLabel")
 local TextLabel_4 = Instance.new("TextLabel")
 local Confirm = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
 local TextLabel_5 = Instance.new("TextLabel")
+local Anti_AFK = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
 
 --Properties:
 
@@ -36,8 +45,8 @@ Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.403887868, 0, 0.523165584, 0)
-Frame.Size = UDim2.new(0, 385, 0, 267)
+Frame.Position = UDim2.new(0.365750074, 0, 0.211907297, 0)
+Frame.Size = UDim2.new(0, 393, 0, 347)
 
 UICorner.CornerRadius = UDim.new(0, 5)
 UICorner.Parent = Frame
@@ -47,8 +56,8 @@ Config_1.Parent = Frame
 Config_1.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
 Config_1.BorderColor3 = Color3.fromRGB(115, 115, 115)
 Config_1.BorderSizePixel = 0
-Config_1.Position = UDim2.new(0.381002516, 0, 0.237966239, 0)
-Config_1.Size = UDim2.new(0, 224, 0, 42)
+Config_1.Position = UDim2.new(0.480186254, 0, 0.203384086, 0)
+Config_1.Size = UDim2.new(0, 186, 0, 42)
 Config_1.Font = Enum.Font.SourceSans
 Config_1.PlaceholderColor3 = Color3.fromRGB(222, 222, 222)
 Config_1.PlaceholderText = "Default: 1"
@@ -59,12 +68,24 @@ Config_1.TextSize = 14.000
 UICorner_2.CornerRadius = UDim.new(0, 5)
 UICorner_2.Parent = Config_1
 
+ImageLabel.Parent = Config_1
+ImageLabel.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(-0.00278727221, 0, 0.190476194, 0)
+ImageLabel.Size = UDim2.new(0, -28, 0, 26)
+ImageLabel.Image = "rbxassetid://10723387841"
+
+UICorner_3.CornerRadius = UDim.new(0, 5)
+UICorner_3.Parent = ImageLabel
+
 CF3.Name = "CF3"
 CF3.Parent = Frame
 CF3.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 CF3.BorderColor3 = Color3.fromRGB(220, 75, 65)
 CF3.BorderSizePixel = 0
-CF3.Position = UDim2.new(0.0147237405, 0, 0.613024533, 0)
+CF3.Position = UDim2.new(0.0251133516, 0, 0.546742141, 0)
 CF3.Size = UDim2.new(0, 375, 0, 50)
 CF3.Font = Enum.Font.SourceSans
 CF3.Text = "StartFarm"
@@ -73,16 +94,16 @@ CF3.TextScaled = true
 CF3.TextSize = 14.000
 CF3.TextWrapped = true
 
-UICorner_3.CornerRadius = UDim.new(0, 5)
-UICorner_3.Parent = CF3
+UICorner_4.CornerRadius = UDim.new(0, 5)
+UICorner_4.Parent = CF3
 
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.0294569936, 0, 0.244523644, 0)
-TextLabel.Size = UDim2.new(0, 145, 0, 40)
+TextLabel.Position = UDim2.new(0.0215590764, 0, 0.207060009, 0)
+TextLabel.Size = UDim2.new(0, 135, 0, 40)
 TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "TP Duration"
 TextLabel.TextColor3 = Color3.fromRGB(209, 209, 209)
@@ -138,7 +159,7 @@ Confirm.Parent = Frame
 Confirm.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 Confirm.BorderColor3 = Color3.fromRGB(220, 75, 65)
 Confirm.BorderSizePixel = 0
-Confirm.Position = UDim2.new(0.113331176, 0, 0.430085123, 0)
+Confirm.Position = UDim2.new(0.100344129, 0, 0.352275312, 0)
 Confirm.Size = UDim2.new(0, 317, 0, 41)
 Confirm.Font = Enum.Font.SourceSans
 Confirm.Text = "Confirm"
@@ -147,15 +168,15 @@ Confirm.TextScaled = true
 Confirm.TextSize = 14.000
 Confirm.TextWrapped = true
 
-UICorner_4.CornerRadius = UDim.new(0, 5)
-UICorner_4.Parent = Confirm
+UICorner_5.CornerRadius = UDim.new(0, 5)
+UICorner_5.Parent = Confirm
 
 TextLabel_5.Parent = Frame
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
 TextLabel_5.BackgroundTransparency = 1.000
 TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_5.BorderSizePixel = 0
-TextLabel_5.Size = UDim2.new(0, 385, 0, 55)
+TextLabel_5.Size = UDim2.new(0, 385, 0, 33)
 TextLabel_5.Font = Enum.Font.Creepster
 TextLabel_5.Text = "2024: MM2 HALLOWEEN SCRIPT"
 TextLabel_5.TextColor3 = Color3.fromRGB(221, 78, 12)
@@ -163,9 +184,26 @@ TextLabel_5.TextScaled = true
 TextLabel_5.TextSize = 14.000
 TextLabel_5.TextWrapped = true
 
+Anti_AFK.Name = "Anti_AFK"
+Anti_AFK.Parent = Frame
+Anti_AFK.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Anti_AFK.BorderColor3 = Color3.fromRGB(220, 75, 65)
+Anti_AFK.BorderSizePixel = 0
+Anti_AFK.Position = UDim2.new(0.0276579335, 0, 0.705243647, 0)
+Anti_AFK.Size = UDim2.new(0, 375, 0, 50)
+Anti_AFK.Font = Enum.Font.SourceSans
+Anti_AFK.Text = "Anti-AFK"
+Anti_AFK.TextColor3 = Color3.fromRGB(250, 250, 250)
+Anti_AFK.TextScaled = true
+Anti_AFK.TextSize = 14.000
+Anti_AFK.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 5)
+UICorner_6.Parent = Anti_AFK
+
 -- Scripts:
 
-local function VHVNNSL_fake_script() -- CF3.TeleportToCoinParts 
+local function RNIIWR_fake_script() -- CF3.TeleportToCoinParts 
 	local script = Instance.new('LocalScript', CF3)
 
 	local Players = game:GetService("Players")
@@ -244,15 +282,30 @@ local function VHVNNSL_fake_script() -- CF3.TeleportToCoinParts
 	
 	
 end
-coroutine.wrap(VHVNNSL_fake_script)()
-local function DEICG_fake_script() -- TextLabel_4.Script 
+coroutine.wrap(RNIIWR_fake_script)()
+local function WCRNHKB_fake_script() -- TextLabel_4.Script 
 	local script = Instance.new('Script', TextLabel_4)
 
 	 V = "Version: 1.0.2"
 	 script.Parent.Text = V
 end
-coroutine.wrap(DEICG_fake_script)()
-local function EYSX_fake_script() -- Frame.Drag 
+coroutine.wrap(WCRNHKB_fake_script)()
+local function CBRFZZW_fake_script() -- Anti_AFK.AntiAFK 
+	local script = Instance.new('LocalScript', Anti_AFK)
+
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	local VirtualUser = game:GetService("VirtualUser")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		LocalPlayer.Idled:Connect(function()
+			VirtualUser:CaptureController()
+			VirtualUser:ClickButton2(Vector2.new())
+		end)
+	end)
+end
+coroutine.wrap(CBRFZZW_fake_script)()
+local function NWTHJ_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -295,8 +348,8 @@ local function EYSX_fake_script() -- Frame.Drag
 		end
 	end)
 end
-coroutine.wrap(EYSX_fake_script)()
-local function OLSUOD_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(NWTHJ_fake_script)()
+local function MUOSED_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	if script.Parent.Enabled == true then
@@ -309,8 +362,8 @@ local function OLSUOD_fake_script() -- ScreenGui.LocalScript
 		})
 	end
 end
-coroutine.wrap(OLSUOD_fake_script)()
-local function XNKK_fake_script() -- ScreenGui.Script 
+coroutine.wrap(MUOSED_fake_script)()
+local function MRMHD_fake_script() -- ScreenGui.Script 
 	local script = Instance.new('Script', ScreenGui)
 
 	print([[
@@ -322,4 +375,5 @@ local function XNKK_fake_script() -- ScreenGui.Script
 	--]]) 
 	
 end
-coroutine.wrap(XNKK_fake_script)()
+coroutine.wrap(MRMHD_fake_script)()
+
