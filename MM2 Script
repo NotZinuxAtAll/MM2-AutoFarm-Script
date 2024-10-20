@@ -11,7 +11,6 @@
                                   | $$                                                                                 |  $$$$$$/                                                                                                                                         
                                   |__/                                                                                  \______/                                                                                                                                          
 
---]]
 -- Gui to Lua
 -- Version: 3.2
 
@@ -203,7 +202,7 @@ UICorner_6.Parent = Anti_AFK
 
 -- Scripts:
 
-local function RNIIWR_fake_script() -- CF3.TeleportToCoinParts 
+local function FTYLFS_fake_script() -- CF3.TeleportToCoinParts 
 	local script = Instance.new('LocalScript', CF3)
 
 	local Players = game:GetService("Players")
@@ -239,7 +238,7 @@ local function RNIIWR_fake_script() -- CF3.TeleportToCoinParts
 					if Child:IsA("BasePart") and (Child:FindFirstChild("TouchTransmitter") or Child:FindFirstChild("TouchInterest")) then
 						task.wait(customWaitTime)
 						teleportToCFrame(Child.CFrame + Vector3.new(0, 5, 0)) -- Teleport slightly above the part
-						task.wait(1.5)
+						task.wait(customWaitTime + 0.5)
 						teleportToCFrame(CFrame.new(-145.783, 160.56, 49.015))
 						task.wait(customWaitTime)
 					end
@@ -282,15 +281,15 @@ local function RNIIWR_fake_script() -- CF3.TeleportToCoinParts
 	
 	
 end
-coroutine.wrap(RNIIWR_fake_script)()
-local function WCRNHKB_fake_script() -- TextLabel_4.Script 
+coroutine.wrap(FTYLFS_fake_script)()
+local function UJDU_fake_script() -- TextLabel_4.Script 
 	local script = Instance.new('Script', TextLabel_4)
 
-	local V = "Version: 1.0.5"
+	local V = "Version: 1.0.6"
 	 script.Parent.Text = V
 end
-coroutine.wrap(WCRNHKB_fake_script)()
-local function CBRFZZW_fake_script() -- Anti_AFK.AntiAFK 
+coroutine.wrap(UJDU_fake_script)()
+local function JQIV_fake_script() -- Anti_AFK.AntiAFK 
 	local script = Instance.new('LocalScript', Anti_AFK)
 
 	local Players = game:GetService("Players")
@@ -304,8 +303,8 @@ local function CBRFZZW_fake_script() -- Anti_AFK.AntiAFK
 		end)
 	end)
 end
-coroutine.wrap(CBRFZZW_fake_script)()
-local function NWTHJ_fake_script() -- Frame.Drag 
+coroutine.wrap(JQIV_fake_script)()
+local function PSKQTP_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -348,8 +347,8 @@ local function NWTHJ_fake_script() -- Frame.Drag
 		end
 	end)
 end
-coroutine.wrap(NWTHJ_fake_script)()
-local function MUOSED_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(PSKQTP_fake_script)()
+local function HUDKU_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	if script.Parent.Enabled == true then
@@ -362,10 +361,11 @@ local function MUOSED_fake_script() -- ScreenGui.LocalScript
 		})
 	end
 end
-coroutine.wrap(MUOSED_fake_script)()
-local function MRMHD_fake_script() -- ScreenGui.Script 
+coroutine.wrap(HUDKU_fake_script)()
+local function PNLA_fake_script() -- ScreenGui.Script 
 	local script = Instance.new('Script', ScreenGui)
 
+	
 	print([[
 	------------------------------------
 	Script made by Zinux/NotZinux
@@ -374,6 +374,44 @@ local function MRMHD_fake_script() -- ScreenGui.Script
 	-------------------------------------
 	--]]) 
 	
+	
+	print([[
+	Checking Version...
+	
+	
+	]])
+	task.wait(1)
+	print([[ 1.0.6
+	-------------
+	
+	You got the latest version!
+	]])
 end
-coroutine.wrap(MRMHD_fake_script)()
+coroutine.wrap(PNLA_fake_script)()
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print("Zinux")
