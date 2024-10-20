@@ -1,16 +1,31 @@
--- Gui to Lua
--- Version: 3.2
+--[[
+  /$$$$$$                      /$$             /$$           /$$      /$$                 /$$                 /$$                           /$$$$$$$$ /$$                                     /$$ /$$   /$$             /$$    /$$$$$$$$ /$$                              
+ /$$__  $$                    |__/            | $$          | $$$    /$$$                | $$                | $$                          |_____ $$ |__/                                    /$$/| $$$ | $$            | $$   |_____ $$ |__/                              
+| $$  \__/  /$$$$$$$  /$$$$$$  /$$  /$$$$$$  /$$$$$$        | $$$$  /$$$$  /$$$$$$   /$$$$$$$  /$$$$$$       | $$$$$$$  /$$   /$$ /$$           /$$/  /$$ /$$$$$$$  /$$   /$$ /$$   /$$     /$$/ | $$$$| $$  /$$$$$$  /$$$$$$      /$$/  /$$ /$$$$$$$  /$$   /$$ /$$   /$$
+|  $$$$$$  /$$_____/ /$$__  $$| $$ /$$__  $$|_  $$_/        | $$ $$/$$ $$ |____  $$ /$$__  $$ /$$__  $$      | $$__  $$| $$  | $$|__/          /$$/  | $$| $$__  $$| $$  | $$|  $$ /$$/    /$$/  | $$ $$ $$ /$$__  $$|_  $$_/     /$$/  | $$| $$__  $$| $$  | $$|  $$ /$$/
+ \____  $$| $$      | $$  \__/| $$| $$  \ $$  | $$          | $$  $$$| $$  /$$$$$$$| $$  | $$| $$$$$$$$      | $$  \ $$| $$  | $$             /$$/   | $$| $$  \ $$| $$  | $$ \  $$$$/    /$$/   | $$  $$$$| $$  \ $$  | $$      /$$/   | $$| $$  \ $$| $$  | $$ \  $$$$/ 
+ /$$  \ $$| $$      | $$      | $$| $$  | $$  | $$ /$$      | $$\  $ | $$ /$$__  $$| $$  | $$| $$_____/      | $$  | $$| $$  | $$ /$$        /$$/    | $$| $$  | $$| $$  | $$  >$$  $$   /$$/    | $$\  $$$| $$  | $$  | $$ /$$ /$$/    | $$| $$  | $$| $$  | $$  >$$  $$ 
+|  $$$$$$/|  $$$$$$$| $$      | $$| $$$$$$$/  |  $$$$/      | $$ \/  | $$|  $$$$$$$|  $$$$$$$|  $$$$$$$      | $$$$$$$/|  $$$$$$$|__/       /$$$$$$$$| $$| $$  | $$|  $$$$$$/ /$$/\  $$ /$$/     | $$ \  $$|  $$$$$$/  |  $$$$//$$$$$$$$| $$| $$  | $$|  $$$$$$/ /$$/\  $$
+ \______/  \_______/|__/      |__/| $$____/    \___/        |__/     |__/ \_______/ \_______/ \_______/      |_______/  \____  $$          |________/|__/|__/  |__/ \______/ |__/  \__/|__/      |__/  \__/ \______/    \___/ |________/|__/|__/  |__/ \______/ |__/  \__/
+                                  | $$                                                                                  /$$  | $$                                                                                                                                         
+                                  | $$                                                                                 |  $$$$$$/                                                                                                                                         
+                                  |__/                                                                                  \______/                                                                                                                                          
 
--- Instances:
-
+--]]
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
-local Frame_2 = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
-local CF1 = Instance.new("TextButton")
-local CF2DetectedDuetoAntiCheat = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Config_1 = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
 local CF3 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local Confirm = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -18,82 +33,70 @@ ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-Frame.BorderColor3 = Color3.fromRGB(220, 75, 65)
-Frame.BorderSizePixel = 2
-Frame.Position = UDim2.new(0.197674423, 0, 0.39403972, 0)
-Frame.Size = UDim2.new(0, 317, 0, 263)
+Frame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.403887868, 0, 0.523165584, 0)
+Frame.Size = UDim2.new(0, 385, 0, 267)
 
-Frame_2.Parent = Frame
-Frame_2.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-Frame_2.BackgroundTransparency = 1.000
-Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_2.BorderSizePixel = 0
-Frame_2.Size = UDim2.new(0, 316, 0, 38)
+UICorner.CornerRadius = UDim.new(0, 5)
+UICorner.Parent = Frame
 
-TextLabel.Parent = Frame_2
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 0
-TextLabel.Size = UDim2.new(0, 223, 0, 45)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "ZyraCheats | AutoFarm MM2 "
-TextLabel.TextColor3 = Color3.fromRGB(198, 198, 198)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
-TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+Config_1.Name = "Config_1"
+Config_1.Parent = Frame
+Config_1.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Config_1.BorderColor3 = Color3.fromRGB(115, 115, 115)
+Config_1.BorderSizePixel = 0
+Config_1.Position = UDim2.new(0.381002516, 0, 0.237966239, 0)
+Config_1.Size = UDim2.new(0, 224, 0, 42)
+Config_1.Font = Enum.Font.SourceSans
+Config_1.PlaceholderColor3 = Color3.fromRGB(222, 222, 222)
+Config_1.PlaceholderText = "Default: 1"
+Config_1.Text = ""
+Config_1.TextColor3 = Color3.fromRGB(199, 199, 199)
+Config_1.TextSize = 14.000
 
-CF1.Name = "CF1"
-CF1.Parent = Frame
-CF1.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-CF1.BorderColor3 = Color3.fromRGB(220, 75, 65)
-CF1.BorderSizePixel = 0
-CF1.Position = UDim2.new(0, 0, 0.167896569, 0)
-CF1.Size = UDim2.new(0, 316, 0, 50)
-CF1.Font = Enum.Font.SourceSans
-CF1.Text = "Start Farm (Detected Due to Anti-Cheat)"
-CF1.TextColor3 = Color3.fromRGB(250, 250, 250)
-CF1.TextScaled = true
-CF1.TextSize = 14.000
-CF1.TextWrapped = true
-
-CF2DetectedDuetoAntiCheat.Name = "CF2(Detected Due to Anti-Cheat)"
-CF2DetectedDuetoAntiCheat.Parent = Frame
-CF2DetectedDuetoAntiCheat.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-CF2DetectedDuetoAntiCheat.BorderColor3 = Color3.fromRGB(220, 75, 65)
-CF2DetectedDuetoAntiCheat.BorderSizePixel = 0
-CF2DetectedDuetoAntiCheat.Position = UDim2.new(0, 0, 0.357526898, 0)
-CF2DetectedDuetoAntiCheat.Size = UDim2.new(0, 316, 0, 50)
-CF2DetectedDuetoAntiCheat.Font = Enum.Font.SourceSans
-CF2DetectedDuetoAntiCheat.Text = "Start Farm 2(Detected Due to Anti-Cheat)"
-CF2DetectedDuetoAntiCheat.TextColor3 = Color3.fromRGB(250, 250, 250)
-CF2DetectedDuetoAntiCheat.TextScaled = true
-CF2DetectedDuetoAntiCheat.TextSize = 14.000
-CF2DetectedDuetoAntiCheat.TextWrapped = true
+UICorner_2.CornerRadius = UDim.new(0, 5)
+UICorner_2.Parent = Config_1
 
 CF3.Name = "CF3"
 CF3.Parent = Frame
-CF3.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+CF3.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 CF3.BorderColor3 = Color3.fromRGB(220, 75, 65)
 CF3.BorderSizePixel = 0
-CF3.Position = UDim2.new(0, 0, 0.547640979, 0)
-CF3.Size = UDim2.new(0, 316, 0, 50)
+CF3.Position = UDim2.new(0.0147237405, 0, 0.613024533, 0)
+CF3.Size = UDim2.new(0, 375, 0, 50)
 CF3.Font = Enum.Font.SourceSans
-CF3.Text = "Start Farm 3 (Undetected)"
+CF3.Text = "StartFarm"
 CF3.TextColor3 = Color3.fromRGB(250, 250, 250)
 CF3.TextScaled = true
 CF3.TextSize = 14.000
 CF3.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 5)
+UICorner_3.Parent = CF3
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0294569936, 0, 0.244523644, 0)
+TextLabel.Size = UDim2.new(0, 145, 0, 40)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "TP Time"
+TextLabel.TextColor3 = Color3.fromRGB(209, 209, 209)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
 
 TextLabel_2.Parent = Frame
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.369085163, 0, 0.809885919, 0)
-TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Position = UDim2.new(0.695152164, 0, 0.851063848, 0)
+TextLabel_2.Size = UDim2.new(0, 104, 0, 38)
 TextLabel_2.Font = Enum.Font.SourceSans
 TextLabel_2.Text = "Made by: NotZinux"
 TextLabel_2.TextColor3 = Color3.fromRGB(204, 204, 204)
@@ -101,163 +104,75 @@ TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
 TextLabel_2.TextWrapped = true
 
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.039719034, 0, 0.851063848, 0)
+TextLabel_3.Size = UDim2.new(0, 119, 0, 38)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "ZyraCheats | AutoFarm MM2 "
+TextLabel_3.TextColor3 = Color3.fromRGB(198, 198, 198)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_4.Parent = Frame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.351729631, 0, 0.851063848, 0)
+TextLabel_4.Size = UDim2.new(0, 121, 0, 38)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "nil"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+Confirm.Name = "Confirm"
+Confirm.Parent = Frame
+Confirm.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Confirm.BorderColor3 = Color3.fromRGB(220, 75, 65)
+Confirm.BorderSizePixel = 0
+Confirm.Position = UDim2.new(0.113331176, 0, 0.430085123, 0)
+Confirm.Size = UDim2.new(0, 317, 0, 41)
+Confirm.Font = Enum.Font.SourceSans
+Confirm.Text = "Confirm"
+Confirm.TextColor3 = Color3.fromRGB(250, 250, 250)
+Confirm.TextScaled = true
+Confirm.TextSize = 14.000
+Confirm.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 5)
+UICorner_4.Parent = Confirm
+
+TextLabel_5.Parent = Frame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Size = UDim2.new(0, 385, 0, 55)
+TextLabel_5.Font = Enum.Font.Creepster
+TextLabel_5.Text = "2024: MM2 HALLOWEEN SCRIPT"
+TextLabel_5.TextColor3 = Color3.fromRGB(221, 78, 12)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
 -- Scripts:
 
-local function MAJMX_fake_script() -- CF1.TeleportToCoins 
-	local script = Instance.new('LocalScript', CF1)
-
-	local Players = game:GetService("Players")
-	local TweenService = game:GetService("TweenService")
-	local LocalPlayer = Players.LocalPlayer
-	local button = script.Parent
-	
-	local isTeleporting = false
-	
-	local function teleportToPart(part)
-	    local character = LocalPlayer.Character
-	    if character and character.PrimaryPart then
-	        local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Linear)
-	        local goal = {CFrame = part.CFrame}
-	        local tween = TweenService:Create(character.PrimaryPart, tweenInfo, goal)
-	        tween:Play()
-	        tween.Completed:Wait()
-	    end
-	end
-	
-	local function checkProximityAndTeleport(part)
-	    local character = LocalPlayer.Character
-	    if character and character.PrimaryPart then
-	        local distance = (character.PrimaryPart.Position - part.Position).Magnitude
-	        if distance < 10 then
-	            character:SetPrimaryPartCFrame(part.CFrame)
-	        end
-	    end
-	end
-	
-	button.MouseButton1Click:Connect(function()
-	    if isTeleporting then return end
-	    isTeleporting = true
-	
-	    while isTeleporting do
-	        local success, errorMessage = pcall(function()
-	            local coinContainer
-	            for _, descendant in ipairs(game.Workspace:GetDescendants()) do
-	                if descendant:IsA("Model") and descendant.Name == "CoinContainer" then
-	                    coinContainer = descendant
-	                    break
-	                end
-	            end
-	
-	            if coinContainer then
-	                for _, child in ipairs(coinContainer:GetChildren()) do
-	                    if child:IsA("BasePart") and child.Parent then
-	                        teleportToPart(child)
-	                        checkProximityAndTeleport(child)
-	                        task.wait(1.6)
-	                    end
-	                end
-	            else
-	                task.wait(0.5)
-	            end
-	        end)
-	
-	        if not success then
-	            warn("Error during teleportation: " .. errorMessage)
-	            isTeleporting = false
-	        end
-	    end
-	end)
-	
-	button.MouseButton2Click:Connect(function()
-	    isTeleporting = false
-	end)
-	
-	
-end
-coroutine.wrap(MAJMX_fake_script)()
-local function VVMBMPE_fake_script() -- CF2DetectedDuetoAntiCheat.TeleportToCoinContainer 
-	local script = Instance.new('LocalScript', CF2DetectedDuetoAntiCheat)
-
-	local Players = game:GetService("Players")
-	local WS = game:GetService("Workspace")
-	local TweenService = game:GetService("TweenService")
-	local RunService = game:GetService("RunService")
-	local LocalPlayer = Players.LocalPlayer
-	local button = script.Parent
-	
-	local function teleportToCoins()
-		local coinContainer
-	
-		-- Wait until CoinContainer is found
-		while not coinContainer do
-			for _, descendant in WS:GetDescendants() do
-				if descendant:IsA("Model") and descendant.Name == "CoinContainer" then
-					coinContainer = descendant
-					break
-				end
-			end
-			if not coinContainer then
-				warn("CoinContainer not found, waiting...")
-				task.wait(1)
-			end
-		end
-	
-		local function teleportToNextCoin()
-			for _, coin in coinContainer:GetChildren() do
-				if coin.Name == "Coin_Server" then
-					local character = LocalPlayer.Character
-					if character then
-						local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
-						if humanoidRootPart then
-							local targetPosition = coin.Position + coin.CFrame.LookVector * 1 -- Teleport in front of the coin
-							local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
-							local goal = {CFrame = CFrame.new(targetPosition)}
-							local tween = TweenService:Create(humanoidRootPart, tweenInfo, goal)
-	
-							-- Change tween time to 0.5 if not at destination
-							local originalTime = tweenInfo.Time
-							if (humanoidRootPart.Position - targetPosition).Magnitude > 1 then
-								tweenInfo = TweenInfo.new(0.01, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
-							end
-	
-							-- Make player go through any part/basepart
-							for _, part in ipairs(character:GetDescendants()) do
-								if part:IsA("BasePart") then
-									part.CanCollide = true
-								end
-							end
-	
-							tween:Play()
-							tween.Completed:Wait()
-	
-							-- Reset tween time back to normal
-							tweenInfo = TweenInfo.new(originalTime, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
-						end
-					end
-					task.wait(1)
-				end
-			end
-		end
-	
-		while coinContainer.Parent do
-			RunService.RenderStepped:Wait()
-			teleportToNextCoin()
-			task.wait(1.5)
-		end
-	end
-	
-	button.MouseButton1Click:Connect(teleportToCoins)
-	
-	
-end
-coroutine.wrap(VVMBMPE_fake_script)()
-local function WQTEW_fake_script() -- CF3.TeleportToCoinParts 
+local function VHVNNSL_fake_script() -- CF3.TeleportToCoinParts 
 	local script = Instance.new('LocalScript', CF3)
 
 	local Players = game:GetService("Players")
 	local LocalPlayer = Players.LocalPlayer
 	local button = script.Parent
 	local WS = game:GetService("Workspace")
+	local customWaitTime = 1 -- Default wait time
 	
 	local function teleportToCFrame(cframe)
 		local character = LocalPlayer.Character
@@ -280,22 +195,22 @@ local function WQTEW_fake_script() -- CF3.TeleportToCoinParts
 			end
 			
 			if CoinContainer then
-				task.wait(1) -- Wait for 1 second if CoinContainer is found
+				task.wait(customWaitTime) -- Wait for custom time if CoinContainer is found
 				local Children = CoinContainer:GetChildren()
 				for _, Child in Children do
 					if Child:IsA("BasePart") and (Child:FindFirstChild("TouchTransmitter") or Child:FindFirstChild("TouchInterest")) then
-						task.wait(0.4)
+						task.wait(customWaitTime)
 						teleportToCFrame(Child.CFrame + Vector3.new(0, 5, 0)) -- Teleport slightly above the part
 						task.wait(1.5)
 						teleportToCFrame(CFrame.new(-145.783, 160.56, 49.015))
-						task.wait(1)
+						task.wait(customWaitTime)
 					end
 				end
 			else
 				warn("CoinContainer not found, waiting...")
-				task.wait(1) -- Wait for 1 second if CoinContainer is not found
+				task.wait(customWaitTime) -- Wait for custom time if CoinContainer is not found
 				repeat
-					task.wait(1)
+					task.wait(customWaitTime)
 					for _, descendant in WS:GetDescendants() do
 						if descendant.Name == "CoinContainer" then
 							CoinContainer = descendant
@@ -307,12 +222,37 @@ local function WQTEW_fake_script() -- CF3.TeleportToCoinParts
 		end
 	end
 	
+	local function updateWaitTime()
+		local textBox = script.Parent.Parent:FindFirstChild("Config_1")
+		if textBox then
+			local input = tonumber(textBox.Text)
+			if input then
+				customWaitTime = input
+			else
+				warn("Invalid input, using default wait time.")
+				customWaitTime = 1
+			end
+		end
+	end
+	
+	local confirmButton = script.Parent.Parent:FindFirstChild("Confirm")
+	if confirmButton then
+		confirmButton.MouseButton1Click:Connect(updateWaitTime)
+	end
+	
 	button.MouseButton1Click:Connect(FindDescendant)
 	
 	
 end
-coroutine.wrap(WQTEW_fake_script)()
-local function MBQGD_fake_script() -- Frame.Drag 
+coroutine.wrap(VHVNNSL_fake_script)()
+local function DEICG_fake_script() -- TextLabel_4.Script 
+	local script = Instance.new('Script', TextLabel_4)
+
+	 V = "Version: 1.0.2"
+	 script.Parent.Text = V
+end
+coroutine.wrap(DEICG_fake_script)()
+local function EYSX_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -355,4 +295,31 @@ local function MBQGD_fake_script() -- Frame.Drag
 		end
 	end)
 end
-coroutine.wrap(MBQGD_fake_script)()
+coroutine.wrap(EYSX_fake_script)()
+local function OLSUOD_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	if script.Parent.Enabled == true then
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Warning!";
+			Text = "theres a possiblity that you might get kicked by the anti-cheat if you input something lower than or between 0.1 to 0.5";
+			Icon = "";
+	
+	
+		})
+	end
+end
+coroutine.wrap(OLSUOD_fake_script)()
+local function XNKK_fake_script() -- ScreenGui.Script 
+	local script = Instance.new('Script', ScreenGui)
+
+	print([[
+	------------------------------------
+	Script made by Zinux/NotZinux
+	
+	ZYRACHEATS OWNED BY ZINUX NOBODY ELSE!
+	-------------------------------------
+	--]]) 
+	
+end
+coroutine.wrap(XNKK_fake_script)()
