@@ -24,17 +24,20 @@ local Config_1 = Instance.new("TextBox")
 local UICorner_2 = Instance.new("UICorner")
 local ImageLabel = Instance.new("ImageLabel")
 local UICorner_3 = Instance.new("UICorner")
-local CF3 = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
 local TextLabel_3 = Instance.new("TextLabel")
 local TextLabel_4 = Instance.new("TextLabel")
 local Confirm = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
 local TextLabel_5 = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
 local Anti_AFK = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local CF3 = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
+local Others = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
 
 --Properties:
 
@@ -80,23 +83,6 @@ ImageLabel.Image = "rbxassetid://10723387841"
 UICorner_3.CornerRadius = UDim.new(0, 5)
 UICorner_3.Parent = ImageLabel
 
-CF3.Name = "CF3"
-CF3.Parent = Frame
-CF3.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-CF3.BorderColor3 = Color3.fromRGB(220, 75, 65)
-CF3.BorderSizePixel = 0
-CF3.Position = UDim2.new(0.125657842, 0, 0.489105314, 0)
-CF3.Size = UDim2.new(0, 375, 0, 50)
-CF3.Font = Enum.Font.SourceSans
-CF3.Text = "StartFarm"
-CF3.TextColor3 = Color3.fromRGB(250, 250, 250)
-CF3.TextScaled = true
-CF3.TextSize = 14.000
-CF3.TextWrapped = true
-
-UICorner_4.CornerRadius = UDim.new(0, 5)
-UICorner_4.Parent = CF3
-
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
@@ -118,6 +104,7 @@ TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.BorderSizePixel = 0
 TextLabel_2.Position = UDim2.new(0.769152105, 0, 0.851063848, 0)
 TextLabel_2.Size = UDim2.new(0, 104, 0, 38)
+TextLabel_2.ZIndex = 888
 TextLabel_2.Font = Enum.Font.SourceSans
 TextLabel_2.Text = "Made by: NotZinux"
 TextLabel_2.TextColor3 = Color3.fromRGB(204, 204, 204)
@@ -132,6 +119,7 @@ TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_3.BorderSizePixel = 0
 TextLabel_3.Position = UDim2.new(0.039719034, 0, 0.851063848, 0)
 TextLabel_3.Size = UDim2.new(0, 119, 0, 38)
+TextLabel_3.ZIndex = 888
 TextLabel_3.Font = Enum.Font.SourceSans
 TextLabel_3.Text = "ZyraCheats | AutoFarm MM2 "
 TextLabel_3.TextColor3 = Color3.fromRGB(198, 198, 198)
@@ -145,8 +133,9 @@ TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.BackgroundTransparency = 1.000
 TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_4.BorderSizePixel = 0
-TextLabel_4.Position = UDim2.new(0.372452378, 0, 0.851063848, 0)
+TextLabel_4.Position = UDim2.new(0.37845239, 0, 0.848182023, 0)
 TextLabel_4.Size = UDim2.new(0, 121, 0, 38)
+TextLabel_4.ZIndex = 888
 TextLabel_4.Font = Enum.Font.SourceSans
 TextLabel_4.Text = "nil"
 TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -168,8 +157,8 @@ Confirm.TextScaled = true
 Confirm.TextSize = 14.000
 Confirm.TextWrapped = true
 
-UICorner_5.CornerRadius = UDim.new(0, 5)
-UICorner_5.Parent = Confirm
+UICorner_4.CornerRadius = UDim.new(0, 5)
+UICorner_4.Parent = Confirm
 
 TextLabel_5.Parent = Frame
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
@@ -184,13 +173,23 @@ TextLabel_5.TextScaled = true
 TextLabel_5.TextSize = 14.000
 TextLabel_5.TextWrapped = true
 
+ScrollingFrame.Parent = Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0239999387, 0, 0.489105314, 0)
+ScrollingFrame.Size = UDim2.new(0, 476, 0, 163)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 1, 0)
+
 Anti_AFK.Name = "Anti_AFK"
-Anti_AFK.Parent = Frame
-Anti_AFK.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Anti_AFK.Parent = ScrollingFrame
+Anti_AFK.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
 Anti_AFK.BorderColor3 = Color3.fromRGB(220, 75, 65)
 Anti_AFK.BorderSizePixel = 0
-Anti_AFK.Position = UDim2.new(0.125657842, 0, 0.65913415, 0)
+Anti_AFK.Position = UDim2.new(0.109243698, 0, -0.00316615193, 0)
 Anti_AFK.Size = UDim2.new(0, 374, 0, 50)
+Anti_AFK.ZIndex = 6
 Anti_AFK.Font = Enum.Font.SourceSans
 Anti_AFK.Text = "Anti-AFK"
 Anti_AFK.TextColor3 = Color3.fromRGB(250, 250, 250)
@@ -198,12 +197,193 @@ Anti_AFK.TextScaled = true
 Anti_AFK.TextSize = 14.000
 Anti_AFK.TextWrapped = true
 
+UICorner_5.CornerRadius = UDim.new(0, 5)
+UICorner_5.Parent = Anti_AFK
+
+CF3.Name = "CF3"
+CF3.Parent = ScrollingFrame
+CF3.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+CF3.BorderColor3 = Color3.fromRGB(220, 75, 65)
+CF3.BorderSizePixel = 0
+CF3.Position = UDim2.new(0.108851135, 0, 0.173612446, 0)
+CF3.Size = UDim2.new(0, 375, 0, 50)
+CF3.Font = Enum.Font.SourceSans
+CF3.Text = "StartFarm"
+CF3.TextColor3 = Color3.fromRGB(250, 250, 250)
+CF3.TextScaled = true
+CF3.TextSize = 14.000
+CF3.TextWrapped = true
+
 UICorner_6.CornerRadius = UDim.new(0, 5)
-UICorner_6.Parent = Anti_AFK
+UICorner_6.Parent = CF3
+
+Others.Name = "Others"
+Others.Parent = ScrollingFrame
+Others.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Others.BackgroundTransparency = 1.000
+Others.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Others.BorderSizePixel = 0
+Others.Position = UDim2.new(0.287815124, 0, 0.36809817, 0)
+Others.Size = UDim2.new(0, 200, 0, 50)
+Others.Font = Enum.Font.SourceSans
+Others.Text = "Others"
+Others.TextColor3 = Color3.fromRGB(222, 222, 222)
+Others.TextScaled = true
+Others.TextSize = 14.000
+Others.TextWrapped = true
+
+TextButton.Parent = ScrollingFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.287815124, 0, 0.521472394, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Noclip Gui"
+TextButton.TextColor3 = Color3.fromRGB(188, 188, 188)
+TextButton.TextSize = 35.000
 
 -- Scripts:
 
-local function NIMBRL_fake_script() -- CF3.TeleportToCoinParts 
+local function GAXHIO_fake_script() -- Config_1.ButtonHoverEffect 
+	local script = Instance.new('LocalScript', Config_1)
+
+	local button = script.Parent
+	local TweenService = game:GetService("TweenService")
+	
+	local originalColor = button.BackgroundColor3
+	local hoverColor = Color3.new(0.0941176, 0.0941176, 0.0941176) -- Dark color
+	
+	local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	button.MouseEnter:Connect(function()
+	    local tween = TweenService:Create(button, tweenInfo, {BackgroundColor3 = hoverColor})
+	    tween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+	    local tween = TweenService:Create(button, tweenInfo, {BackgroundColor3 = originalColor})
+	    tween:Play()
+	end)
+	
+	
+end
+coroutine.wrap(GAXHIO_fake_script)()
+local function RSTF_fake_script() -- TextLabel_4.Script 
+	local script = Instance.new('Script', TextLabel_4)
+
+	local V = "Version: 1.1.0"
+	 script.Parent.Text = V
+end
+coroutine.wrap(RSTF_fake_script)()
+local function XGHSB_fake_script() -- Confirm.ButtonHoverEffect 
+	local script = Instance.new('LocalScript', Confirm)
+
+	local button = script.Parent
+	local TweenService = game:GetService("TweenService")
+	
+	local originalColor = button.BackgroundColor3
+	local hoverColor = Color3.new(0.0941176, 0.0941176, 0.0941176) -- Dark color
+	
+	local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	button.MouseEnter:Connect(function()
+	    local tween = TweenService:Create(button, tweenInfo, {BackgroundColor3 = hoverColor})
+	    tween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+	    local tween = TweenService:Create(button, tweenInfo, {BackgroundColor3 = originalColor})
+	    tween:Play()
+	end)
+	
+	
+end
+coroutine.wrap(XGHSB_fake_script)()
+local function UIWQXAO_fake_script() -- Frame.Drag 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(UIWQXAO_fake_script)()
+local function LNDRD_fake_script() -- Anti_AFK.AntiAFK 
+	local script = Instance.new('LocalScript', Anti_AFK)
+
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	local VirtualUser = game:GetService("VirtualUser")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		LocalPlayer.Idled:Connect(function()
+			VirtualUser:CaptureController()
+			VirtualUser:ClickButton2(Vector2.new())
+		end)
+	end)
+end
+coroutine.wrap(LNDRD_fake_script)()
+local function BJDUOT_fake_script() -- Anti_AFK.ButtonHoverEffect 
+	local script = Instance.new('LocalScript', Anti_AFK)
+
+	local button = script.Parent
+	local TweenService = game:GetService("TweenService")
+	
+	local originalColor = button.BackgroundColor3
+	local hoverColor = Color3.new(0.0941176, 0.0941176, 0.0941176) -- Dark color
+	
+	local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	button.MouseEnter:Connect(function()
+	    local tween = TweenService:Create(button, tweenInfo, {BackgroundColor3 = hoverColor})
+	    tween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+	    local tween = TweenService:Create(button, tweenInfo, {BackgroundColor3 = originalColor})
+	    tween:Play()
+	end)
+	
+	
+end
+coroutine.wrap(BJDUOT_fake_script)()
+local function PUFGQD_fake_script() -- CF3.TeleportToCoinParts 
 	local script = Instance.new('LocalScript', CF3)
 
 	local Players = game:GetService("Players")
@@ -282,74 +462,64 @@ local function NIMBRL_fake_script() -- CF3.TeleportToCoinParts
 	
 	
 end
-coroutine.wrap(NIMBRL_fake_script)()
-local function XGKF_fake_script() -- TextLabel_4.Script 
-	local script = Instance.new('Script', TextLabel_4)
+coroutine.wrap(PUFGQD_fake_script)()
+local function XHHSGP_fake_script() -- CF3.ButtonHoverEffect 
+	local script = Instance.new('LocalScript', CF3)
 
-	local V = "Version: 1.0.8"
-	 script.Parent.Text = V
-end
-coroutine.wrap(XGKF_fake_script)()
-local function NOJLH_fake_script() -- Anti_AFK.AntiAFK 
-	local script = Instance.new('LocalScript', Anti_AFK)
-
-	local Players = game:GetService("Players")
-	local LocalPlayer = Players.LocalPlayer
-	local VirtualUser = game:GetService("VirtualUser")
+	local button = script.Parent
+	local TweenService = game:GetService("TweenService")
 	
+	local originalColor = button.BackgroundColor3
+	local hoverColor = Color3.new(0.0941176, 0.0941176, 0.0941176) -- Dark color
+	
+	local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	button.MouseEnter:Connect(function()
+	    local tween = TweenService:Create(button, tweenInfo, {BackgroundColor3 = hoverColor})
+	    tween:Play()
+	end)
+	
+	button.MouseLeave:Connect(function()
+	    local tween = TweenService:Create(button, tweenInfo, {BackgroundColor3 = originalColor})
+	    tween:Play()
+	end)
+	
+	
+end
+coroutine.wrap(XHHSGP_fake_script)()
+local function ILIZM_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
 	script.Parent.MouseButton1Click:Connect(function()
-		LocalPlayer.Idled:Connect(function()
-			VirtualUser:CaptureController()
-			VirtualUser:ClickButton2(Vector2.new())
-		end)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/MaksBloxX/NoClipScript/main/NoClip%20Roblox", true))()
 	end)
 end
-coroutine.wrap(NOJLH_fake_script)()
-local function MGMLA_fake_script() -- Frame.Drag 
-	local script = Instance.new('LocalScript', Frame)
+coroutine.wrap(ILIZM_fake_script)()
+local function IJTMECZ_fake_script() -- TextButton.ButtonHoverEffect 
+	local script = Instance.new('LocalScript', TextButton)
 
-	local UserInputService = game:GetService("UserInputService")
+	local button = script.Parent
+	local TweenService = game:GetService("TweenService")
 	
-	local gui = script.Parent
+	local originalColor = button.BackgroundColor3
+	local hoverColor = Color3.new(0.0941176, 0.0941176, 0.0941176) -- Dark color
 	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
+	local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
 	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-			
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
+	button.MouseEnter:Connect(function()
+	    local tween = TweenService:Create(button, tweenInfo, {BackgroundColor3 = hoverColor})
+	    tween:Play()
 	end)
 	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
+	button.MouseLeave:Connect(function()
+	    local tween = TweenService:Create(button, tweenInfo, {BackgroundColor3 = originalColor})
+	    tween:Play()
 	end)
 	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
+	
 end
-coroutine.wrap(MGMLA_fake_script)()
-local function XPMP_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(IJTMECZ_fake_script)()
+local function XGWWU_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	if script.Parent.Enabled == true then
@@ -360,15 +530,30 @@ local function XPMP_fake_script() -- ScreenGui.LocalScript
 	
 	
 		})
+		task.wait(5)
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Warning!";
+			Text = "if you use both startfarm buttons it may malfunction and probably cause the game/client to crash!";
+			Icon = "";
+	
+	
+		})
 	end
+	
 end
-coroutine.wrap(XPMP_fake_script)()
-local function PDKO_fake_script() -- ScreenGui.Script 
+coroutine.wrap(XGWWU_fake_script)()
+local function JPTUVFA_fake_script() -- ScreenGui.Script 
 	local script = Instance.new('Script', ScreenGui)
 
 	warn("Warning: theres a possiblity that you might get kicked by the anti-cheat if you input something lower than or between 0.1 to 0.5")
 end
-coroutine.wrap(PDKO_fake_script)()
+coroutine.wrap(JPTUVFA_fake_script)()
+
+
+
+
+
+
 
 
 
