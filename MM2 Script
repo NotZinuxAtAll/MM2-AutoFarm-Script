@@ -133,7 +133,7 @@ TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.BackgroundTransparency = 1.000
 TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_4.BorderSizePixel = 0
-TextLabel_4.Position = UDim2.new(0.37845239, 0, 0.848182023, 0)
+TextLabel_4.Position = UDim2.new(0.37845239, 0, 0.851063848, 0)
 TextLabel_4.Size = UDim2.new(0, 121, 0, 38)
 TextLabel_4.ZIndex = 888
 TextLabel_4.Font = Enum.Font.SourceSans
@@ -180,14 +180,16 @@ ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Position = UDim2.new(0.0239999387, 0, 0.489105314, 0)
 ScrollingFrame.Size = UDim2.new(0, 476, 0, 163)
-ScrollingFrame.CanvasSize = UDim2.new(0, 0, 1, 0)
+ScrollingFrame.BottomImage = ""
+ScrollingFrame.CanvasPosition = Vector2.new(0, 17.0306778)
+ScrollingFrame.TopImage = ""
 
 Anti_AFK.Name = "Anti_AFK"
 Anti_AFK.Parent = ScrollingFrame
 Anti_AFK.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
 Anti_AFK.BorderColor3 = Color3.fromRGB(220, 75, 65)
 Anti_AFK.BorderSizePixel = 0
-Anti_AFK.Position = UDim2.new(0.109243698, 0, -0.00316615193, 0)
+Anti_AFK.Position = UDim2.new(0.100840338, 0, 0.0477910899, 0)
 Anti_AFK.Size = UDim2.new(0, 374, 0, 50)
 Anti_AFK.ZIndex = 6
 Anti_AFK.Font = Enum.Font.SourceSans
@@ -205,7 +207,7 @@ CF3.Parent = ScrollingFrame
 CF3.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
 CF3.BorderColor3 = Color3.fromRGB(220, 75, 65)
 CF3.BorderSizePixel = 0
-CF3.Position = UDim2.new(0.108851135, 0, 0.173612446, 0)
+CF3.Position = UDim2.new(0.106750295, 0, 0.139096498, 0)
 CF3.Size = UDim2.new(0, 375, 0, 50)
 CF3.Font = Enum.Font.SourceSans
 CF3.Text = "StartFarm"
@@ -223,7 +225,7 @@ Others.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Others.BackgroundTransparency = 1.000
 Others.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Others.BorderSizePixel = 0
-Others.Position = UDim2.new(0.287815124, 0, 0.36809817, 0)
+Others.Position = UDim2.new(0.285714298, 0, 0.458466709, 0)
 Others.Size = UDim2.new(0, 200, 0, 50)
 Others.Font = Enum.Font.SourceSans
 Others.Text = "Others"
@@ -236,7 +238,7 @@ TextButton.Parent = ScrollingFrame
 TextButton.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
 TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.287815124, 0, 0.521472394, 0)
+TextButton.Position = UDim2.new(0.289915979, 0, 0.526475966, 0)
 TextButton.Size = UDim2.new(0, 200, 0, 50)
 TextButton.Font = Enum.Font.SourceSans
 TextButton.Text = "Noclip Gui"
@@ -245,7 +247,7 @@ TextButton.TextSize = 35.000
 
 -- Scripts:
 
-local function GAXHIO_fake_script() -- Config_1.ButtonHoverEffect 
+local function VRRRTAO_fake_script() -- Config_1.ButtonHoverEffect 
 	local script = Instance.new('LocalScript', Config_1)
 
 	local button = script.Parent
@@ -268,15 +270,15 @@ local function GAXHIO_fake_script() -- Config_1.ButtonHoverEffect
 	
 	
 end
-coroutine.wrap(GAXHIO_fake_script)()
-local function RSTF_fake_script() -- TextLabel_4.Script 
+coroutine.wrap(VRRRTAO_fake_script)()
+local function CPKOMJD_fake_script() -- TextLabel_4.Script 
 	local script = Instance.new('Script', TextLabel_4)
 
 	local V = "Version: 1.1.0"
 	 script.Parent.Text = V
 end
-coroutine.wrap(RSTF_fake_script)()
-local function XGHSB_fake_script() -- Confirm.ButtonHoverEffect 
+coroutine.wrap(CPKOMJD_fake_script)()
+local function VQLABBX_fake_script() -- Confirm.ButtonHoverEffect 
 	local script = Instance.new('LocalScript', Confirm)
 
 	local button = script.Parent
@@ -299,8 +301,8 @@ local function XGHSB_fake_script() -- Confirm.ButtonHoverEffect
 	
 	
 end
-coroutine.wrap(XGHSB_fake_script)()
-local function UIWQXAO_fake_script() -- Frame.Drag 
+coroutine.wrap(VQLABBX_fake_script)()
+local function OEVDU_fake_script() -- Frame.Drag 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -343,8 +345,8 @@ local function UIWQXAO_fake_script() -- Frame.Drag
 		end
 	end)
 end
-coroutine.wrap(UIWQXAO_fake_script)()
-local function LNDRD_fake_script() -- Anti_AFK.AntiAFK 
+coroutine.wrap(OEVDU_fake_script)()
+local function XAPSRZM_fake_script() -- Anti_AFK.AntiAFK 
 	local script = Instance.new('LocalScript', Anti_AFK)
 
 	local Players = game:GetService("Players")
@@ -358,8 +360,8 @@ local function LNDRD_fake_script() -- Anti_AFK.AntiAFK
 		end)
 	end)
 end
-coroutine.wrap(LNDRD_fake_script)()
-local function BJDUOT_fake_script() -- Anti_AFK.ButtonHoverEffect 
+coroutine.wrap(XAPSRZM_fake_script)()
+local function BKCCX_fake_script() -- Anti_AFK.ButtonHoverEffect 
 	local script = Instance.new('LocalScript', Anti_AFK)
 
 	local button = script.Parent
@@ -382,8 +384,8 @@ local function BJDUOT_fake_script() -- Anti_AFK.ButtonHoverEffect
 	
 	
 end
-coroutine.wrap(BJDUOT_fake_script)()
-local function PUFGQD_fake_script() -- CF3.TeleportToCoinParts 
+coroutine.wrap(BKCCX_fake_script)()
+local function CMEZPE_fake_script() -- CF3.TeleportToCoinParts 
 	local script = Instance.new('LocalScript', CF3)
 
 	local Players = game:GetService("Players")
@@ -462,8 +464,8 @@ local function PUFGQD_fake_script() -- CF3.TeleportToCoinParts
 	
 	
 end
-coroutine.wrap(PUFGQD_fake_script)()
-local function XHHSGP_fake_script() -- CF3.ButtonHoverEffect 
+coroutine.wrap(CMEZPE_fake_script)()
+local function IMZYMOD_fake_script() -- CF3.ButtonHoverEffect 
 	local script = Instance.new('LocalScript', CF3)
 
 	local button = script.Parent
@@ -486,16 +488,16 @@ local function XHHSGP_fake_script() -- CF3.ButtonHoverEffect
 	
 	
 end
-coroutine.wrap(XHHSGP_fake_script)()
-local function ILIZM_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(IMZYMOD_fake_script)()
+local function BBWHZ_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/MaksBloxX/NoClipScript/main/NoClip%20Roblox", true))()
 	end)
 end
-coroutine.wrap(ILIZM_fake_script)()
-local function IJTMECZ_fake_script() -- TextButton.ButtonHoverEffect 
+coroutine.wrap(BBWHZ_fake_script)()
+local function ZQDDZGQ_fake_script() -- TextButton.ButtonHoverEffect 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local button = script.Parent
@@ -518,8 +520,8 @@ local function IJTMECZ_fake_script() -- TextButton.ButtonHoverEffect
 	
 	
 end
-coroutine.wrap(IJTMECZ_fake_script)()
-local function XGWWU_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(ZQDDZGQ_fake_script)()
+local function WPHTAOQ_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	if script.Parent.Enabled == true then
@@ -541,13 +543,14 @@ local function XGWWU_fake_script() -- ScreenGui.LocalScript
 	end
 	
 end
-coroutine.wrap(XGWWU_fake_script)()
-local function JPTUVFA_fake_script() -- ScreenGui.Script 
+coroutine.wrap(WPHTAOQ_fake_script)()
+local function LKNEH_fake_script() -- ScreenGui.Script 
 	local script = Instance.new('Script', ScreenGui)
 
 	warn("Warning: theres a possiblity that you might get kicked by the anti-cheat if you input something lower than or between 0.1 to 0.5")
 end
-coroutine.wrap(JPTUVFA_fake_script)()
+coroutine.wrap(LKNEH_fake_script)()
+
 
 
 
